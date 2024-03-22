@@ -13,10 +13,30 @@
       <img src="./assets/image/pages/index/img/halteres.png" alt="">
     </div>
     <nav>
-      <button id="button__modal" onclick="teste()">Login</button>
+      <button id="open-modal">Login</button>
     </nav>
   </header>
   <section>login</section>
+  <!-- Modal -->
+  <div id="fade" class="hide">
+    <div id="modal" class="hide">
+      <div class="modal-header">
+        <h2>Acessar Conta</h2>
+      </div>
+      <div class="modal-main">
+        <form class="form" action="" method="post">
+          <label for="user">Usuário</label>
+          <input type="text" id="user" name="user" required/>
+          <label for="pass">Senha</label>
+          <input type="password" id="pass" name="pass" required/>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button class="submit" onclick="validateForm()">Entrar</button>
+        <button id="close-modal">Fechar</button>
+      </div>
+    </div>
+  </div>
   <script src="./assets/js/pages/index/index.js"></script>
 </body>
 </html>

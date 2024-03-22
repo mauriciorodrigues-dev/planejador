@@ -11,12 +11,40 @@ header{
 .imagem{
   width: 8rem;
 }
+#open-modal{
+  background-color: #0077bf;
+}
+#open-modal:hover{
+  opacity: 1;
+}
 
-#button__modal {
-  color: #fff;
-  font-weight: bold;
-  background-color: black;
+
+
+/*
+RESPONSIVIDADE DO HEADER
+*/
+/* Telas Pequenas: até 600px */
+@media (max-width: 600px) {
+  /* Seu CSS para telas pequenas aqui */
 }
-#button__modal:hover{
-  background-color: rgb(138, 57, 57);
+
+/* Celular: de 600px até 768px */
+@media (min-width: 601px) and (max-width: 768px) {
+  /* Seu CSS para celulares aqui */
 }
+
+/* Tablet: de 768px até 992px */
+@media (min-width: 769px) and (max-width: 992px) {
+  /* Seu CSS para tablets aqui */
+}
+
+/* Desktop: de 992px até 1200px */
+@media (min-width: 993px) and (max-width: 1200px) {
+  /* Seu CSS para desktops aqui */
+}
+
+/* Telas Grandes: Acima de 1200px */
+@media (min-width: 1201px) {
+  /* Seu CSS para telas grandes aqui */
+}
+
