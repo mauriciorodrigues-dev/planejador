@@ -1,0 +1,72 @@
+.container-login{
+  width: 90rem;
+  display: flex;
+  align-items: center;
+  /* padding: 1rem; */
+  background-color: #ffffffb6;
+  box-shadow: 1rem 1rem 5rem #4f52ffb2;
+  border-radius: .4rem;
+}
+.img-box{
+  width: 80rem;
+}
+
+.login-box{
+  background-color: #4F52FF;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+}
+.login-box button{
+  background-color: #FF928F;
+  color: black;
+  width: 40%;
+  padding: 1rem 0;
+}
+.login-grupo{
+  margin: 1.5rem;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: .3rem;
+  color: black;
+}
+
+.login-grupo input{
+  border: none;
+  outline: none;
+}
+
+/* Telas Pequenas: até 600px */
+@media (max-width: 1000px) {
+  .container-login{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+ 
+}
+
+/* Celular: de 600px até 768px */
+@media (min-width: 601px) and (max-width: 768px) {
+  
+}
+
+/* Tablet: de 768px até 992px */
+@media (min-width: 769px) and (max-width: 992px) {
+  /* Seu CSS para tablets aqui */
+}
+
+/* Desktop: de 992px até 1200px */
+@media (min-width: 993px) and (max-width: 1200px) {
+  /* Seu CSS para desktops aqui */
+}
+
+/* Telas Grandes: Acima de 1200px */
+@media (min-width: 1201px) {
+  /* Seu CSS para telas grandes aqui */
+}
