@@ -1,35 +1,36 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login | Planejador Nutricional</title>
-  <link rel="stylesheet" href="./assets/css/pages/index/index.css"/>
-  <link rel="icon" href="data:,">
-  <script src="https://kit.fontawesome.com/fc1d6ae1da.js" crossorigin="anonymous"></script>
-</head>
-<body>
-  <div class="container-login">
-    <h1>Planejador Nutricional</h1>
-    <div class="login-box">
-      <div class="img-box">
-        <img src="assets/image/pages/index/img/12085707_20944201.jpeg" alt="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | Planejador Nutricional</title>
+    <link rel="stylesheet" href="./assets/css/pages/index/index.css" />
+    <link rel="icon" href="data:," />
+    <script
+      src="https://kit.fontawesome.com/fc1d6ae1da.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container-login">
+      <div class="cont-img">
+        <img
+          src="./assets/image/pages/index/img/login.png"
+          alt=""
+        />
       </div>
-      <div class="login-box">
-        <div class="login-grupo">
-          <i class="fas fa-user icon"></i>
-          <input type="text" id="usuario" placeholder="Usuário">
+      <div class="cont-form">
+        <h2>Acessar Conta</h2>
+        <div class="form-grupo">
+          <i class="fa-solid fa-user"></i>
+          <input type="text" id="username" placeholder="Usuário" required />
         </div>
-        <div class="login-grupo senha">
-          <i class="fas fa-lock icon"></i>
-          <input type="password" id="senha" placeholder="Senha">
-          <span class="show-pass" onclick="mostrarSenha()"><i class="far fa-eye"></i></span>
-        </div>
+        <div class="form-grupo">
+          <i class="fa fa-lock"></i>
+          <input type="password" id="password" placeholder="Senha" required />
         </div>
       </div>
     </div>
-  </div>
-
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
