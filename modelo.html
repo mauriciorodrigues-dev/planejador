@@ -9,24 +9,50 @@
   <script src="https://kit.fontawesome.com/fc1d6ae1da.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header>
-    saudação
-  </header>
-  <main>
-    <aside>
-      <div><i class="fa-solid fa-chart-line"> </i>Dashboard</div>
-      <div><i class="fa-solid fa-circle-info"></i> Informações</div>
-      <div><i class="fa-solid fa-dumbbell"></i> Treino</div>
-      <div><i class="fa-solid fa-pizza-slice"></i> Dieta</div>
-    </aside>
-    <section>
-      páginas
-    </section>
-  </main>
-  <footer>
-    Rodapé
-  </footer>
-
+    <div class="container">
+      <div class="sidebar">
+        <button id="btnDashboard" class="active" onclick="mostrarConteudo('dashboard')"><i class="fa-solid fa-chart-simple"></i>Dashboard</button>
+        <button id="btnTreino" onclick="mostrarConteudo('treino')"><i class="fa-solid fa-dumbbell"></i>Treino</button>
+        <button id="btnDieta" onclick="mostrarConteudo('dieta')"><i class="fa-solid fa-pizza-slice"></i>Dieta</button>
+      </div>
+      <div class="content">
+        <header>
+          Dyrson, seja bem vindo ao seu painel de controle! Boa tarde!
+        </header>
+        <main id="mainContent">Conteúdo inicial</main>
+      </div>
+    </div>
+  
+    <script>
+      function mostrarConteudo(secao) {
+        // Remove a classe "active" de todos os botões
+        var buttons = document.querySelectorAll('.sidebar button');
+        buttons.forEach(function(button) {
+          button.classList.remove('active');
+        });
+  
+        // Adiciona a classe "active" apenas ao botão clicado
+        document.getElementById('btn' + secao.charAt(0).toUpperCase() + secao.slice(1)).classList.add('active');
+  
+        // Aqui você pode adicionar a lógica para exibir o conteúdo correspondente à seção clicada
+        // Por exemplo:
+        var conteudo = document.getElementById('mainContent');
+        switch (secao) {
+          case 'dashboard':
+            conteudo.innerHTML = "Conteúdo do Dashboard";
+            break;
+          case 'treino':
+            conteudo.innerHTML = "Conteúdo do Treino";
+            break;
+          case 'dieta':
+            conteudo.innerHTML = "Conteúdo da Dieta";
+            break;
+          default:
+            conteudo.innerHTML = "Conteúdo não encontrado";
+        }
+      }
+    </script>
+  
   <script src="script.js"></script>
 </body>
 </html>
